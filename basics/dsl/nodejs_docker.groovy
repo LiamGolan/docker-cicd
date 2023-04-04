@@ -12,7 +12,7 @@ job('NodeJS Docker example') {
     
     steps {
         dockerBuildAndPublish {
-            repositoryName('liamgolan/docker-cicd')
+            repositoryName('golanliam/jenkins_course')
             tag('nodejsdocker')
             registryCredentials('dockerhub')
             buildContext('./basics/')
