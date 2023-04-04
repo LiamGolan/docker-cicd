@@ -13,8 +13,7 @@ job('NodeJS example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("")
-        shell("""cd basics; npm install""")
+        shell("""cd basics; pwd; npm install""")
     }
 }
 
