@@ -12,8 +12,8 @@ job('NodeJS Docker example') {
     
     steps {
         dockerBuildAndPublish {
-            repositoryName('LiamGolan/docker-cicd')
-            tag('NodeJSDocker')
+            repositoryName('liamgolan/docker-cicd')
+            tag('nodejsdocker')
             registryCredentials('dockerhub')
             buildContext('./basics/')
             forcePull(false)
